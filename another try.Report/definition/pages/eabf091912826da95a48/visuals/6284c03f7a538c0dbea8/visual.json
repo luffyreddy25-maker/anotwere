@@ -1,0 +1,56 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
+  "name": "6284c03f7a538c0dbea8",
+  "position": {
+    "x": 662,
+    "y": 20,
+    "z": 2,
+    "height": 506,
+    "width": 618,
+    "tabOrder": 2
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dimension_date"
+                    }
+                  },
+                  "Property": "CalendarMonthLabel"
+                }
+              },
+              "queryRef": "dimension_date.CalendarMonthLabel",
+              "nativeQueryRef": "CalendarMonthLabel"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "a50a4ab593bbfb0be9f8",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dimension_date"
+              }
+            },
+            "Property": "CalendarMonthLabel"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}
